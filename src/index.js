@@ -3,7 +3,6 @@ import menu from "./menu-component";
 import contact from "./contact-component";
 
 const contentContainer = document.getElementById("content");
-const tabContainer = document.createElement("div");
 const tabList = document.createElement("ul");
 const tabContent = document.createElement("div");
 
