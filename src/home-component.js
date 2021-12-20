@@ -16,6 +16,6 @@ const home = () => {
   homeContainer.append(imageHeader, header, copyParagraph);
 
   return homeContainer;
-  };
+};
 
 export default home;

@@ -1,4 +1,6 @@
 import home from "./home-component";
+import menu from "./menu-component";
+import contact from "./contact-component";
 
 const contentContainer = document.getElementById("content");
 const tabContainer = document.createElement("div");
@@ -14,10 +16,21 @@ contactTab.innerHTML = "Contact";
 
 homeTab.addEventListener("click", () => {
   tabContent.innerHTML = "";
-  tabContent.appendChild(home())
+  tabContent.appendChild(home());
+});
+
+menuTab.addEventListener("click", () => {
+  tabContent.innerHTML = "";
+  tabContent.appendChild(menu());
+});
+
+contactTab.addEventListener("click", () => {
+  tabContent.innerHTML = "";
+  tabContent.appendChild(contact());
 });
 
 tabList.append(homeTab, menuTab, contactTab);
 
 contentContainer.appendChild(tabList);
 contentContainer.appendChild(tabContent);
+tabContent.appendChild(home());
