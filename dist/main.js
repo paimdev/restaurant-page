@@ -1,1 +1,1 @@
-console.log("It's working");
+(()=>{"use strict";document.getElementById("content").appendChild((()=>{const e=document.createElement("div"),t=document.createElement("img"),n=document.createElement("h1"),d=document.createElement("p");return n.innerHTML="The Odin Restaurant",d.innerHTML="You will find the best food in asgard here! Don't waste time and make your reservations RIGHT NOW!",e.append(t,n,d),e})())})();
